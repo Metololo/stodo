@@ -14,7 +14,7 @@
 
         <div id="infos" class="glass-box">
             <h2 id="set">set 1</h2>
-            <div id="background-btn">
+            <div id="background-btn" onclick="nextBackground()">
                 <img src="assets/img/icons/bkg-logo.png" alt="background logo button">
                 <h2>background</h2>
             </div>
@@ -22,12 +22,15 @@
 
         <div id="timer" class="glass-box">
             <h2 id="work">work</h2>
-            <h1 id="time">10:20</h1>
+            <div id="time-div">
+                <h1 id="time">25:00</h1>
+            </div>
+
             <div id="action-container">
                 <button id="plus" class="actions">
                     <img src="assets/img/icons/plus-logo.png" alt="logo-plus">
                 </button>
-                <button id="play" class="actions">
+                <button id="play" class="actions" onclick="startTimer()">
                     <img src="assets/img/icons/play-logo.png" alt="logo-play">
                 </button>
                 <button id="reset" class="actions">
@@ -41,6 +44,7 @@
 
     </div>
 
-
+    <script src="js/change_background.js"></script>
+    <script src="js/timer.js"></script>
 </body>
 </html>

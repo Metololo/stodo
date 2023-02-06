@@ -16,17 +16,19 @@ html{
     font-weight: 700;
 }
 body{
-    background-image: url("../assets/backgrounds/b-1.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    transition: background-image 0.2s;
     width: 100%;
     margin: 0;
     height: 100vh;
 }
 h1,h2{
     margin: 0;
+}
+#background-img{
+    transition: all ease 0.4s;
 }
 #content{
     height: 100%;
@@ -61,6 +63,7 @@ h1,h2{
 #background-btn{
     display: flex;
     margin-top: 16px;
+    cursor: pointer;
 }
 #background-btn h2{
     font-size: 29px;
@@ -83,7 +86,12 @@ h1,h2{
 #work{
     font-size: 40px;
 }
+#time-div{
+    display: flex;
+    justify-content: center;
+}
 #time{
+    font-variant-numeric: tabular-nums;
     font-size: 78px;
 }
 #action-container{
@@ -130,6 +138,7 @@ h1,h2{
         font-size: 73px;
     }
     #time{
+        letter-spacing: -0.25rem;
         font-size: 118px;
     }
     .actions{

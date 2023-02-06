@@ -1,0 +1,18 @@
+const backgrounds = ["b-1.gif","b-2.gif","b-3.gif","b-4.gif","b-5.gif","b-6.gif","b-8.gif","b-9.gif","b-10.gif","b-11.gif","b-12.gif","b-13.gif","b-14.gif",
+    "b-15.gif","b-16.gif","b-17.gif","b-18.gif","b-19.gif","b-20.gif","b-21.gif","b-22.gif","b-23.gif","b-24.jpg","b-25.jpg","b-26.jpg","b-27.png","b-28.gif"
+    ,"b-29.gif","b-30.gif","b-31.gif","b-32.gif","b-33.gif","b-34.gif","b-35.gif","b-36.gif","b-37.gif","b-38.gif","b-39.gif","b-40.gif","b-41.gif","b-42.gif",
+    "b-43.gif","b-44.gif"];
+
+const num = Math.floor(Math.random()*1000) %42 + 1
+const image = backgrounds[num]
+document.body.style.backgroundImage = "url('../assets/backgrounds/"+image+"')"
+
+
+function nextBackground(){
+
+    const num = Math.floor(Math.random()*1000) %42 +1
+    console.log(num)
+    const image = backgrounds[num]
+    document.body.style.backgroundImage = "url('../assets/backgrounds/"+image+"')"
+
+}
